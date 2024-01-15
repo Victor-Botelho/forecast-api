@@ -1,7 +1,7 @@
 import time
 import logging
 
-from flask import Flask, request, Response, g
+from flask import Flask, request, g
 import numpy as np
 
 from src.forecast import forecast, cross_validation, get_model
