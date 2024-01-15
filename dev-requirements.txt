@@ -1,0 +1,3 @@
+ipykernel>=^6.28.0
+matplotlib>=^3.8.2
+google-api-python-client>=^2.113.0
