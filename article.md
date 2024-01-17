@@ -1,7 +1,7 @@
 # Building a Time Series Forecasting RESTful API with Flask and StatsForecast on Google Cloud Platform
 In the ever-evolving landscape of data science, time series forecasting stands as a pivotal skill, applied across diverse sectors like finance and meteorology. Our project streamlines this process, offering a Python-based API that leverages Flask for its lightweight framework and StatsForecast for robust predictive modeling. This article will guide you through building and deploying this API, both locally and on Google Cloud Platform, demonstrating a practical approach to harnessing the power of forecasting in your data-driven endeavors.
 
-To check out the full code of the project introduced in this article, visit the [GitHub repository](), where you will find a detailed README with instructions on how to build and deploy the API, locally or on Google Cloud Platform.
+To check out the full code of the project introduced in this article, visit the [GitHub repository](https://github.com/Victor-Botelho/forecast-api), where you will find a detailed README with instructions on how to build and deploy the API, locally or on Google Cloud Platform.
 
 ## Why Flask and StatsForecast
 Flask was chosen for its simplicity and lightweight nature, making it ideal for small-scale applications and quick deployments. It's a microframework in Python, meaning it provides just the essentials to build a web application, ensuring a low learning curve and flexibility. This simplicity allows for faster development and easier maintenance of the API. Some more popular alternatives to Flask would be FastAPI and Django.
@@ -215,12 +215,12 @@ Docker allows us to create containers, which are isolated environments that cont
 
 To create a container, you will need all the files that are necessary to run your code, including scripts and configuration files. Besides that, a Dockerfile is also required, which is a file that contains instructions on how to build the container. Then, from the Dockerfile, you can build and run the container.
 
-For more information about Docker generally, check out the [official documentation](https://docs.docker.com/). Also check out the README of the [GitHub repository]() to see how a project like the one introduced in this article can be containerized.
+For more information about Docker generally, check out the [official documentation](https://docs.docker.com/). Also check out the README of the [GitHub repository](https://github.com/Victor-Botelho/forecast-api) to see how a project like the one introduced in this article can be containerized.
 
 ## Deploying to Google Cloud Platform
 Google Cloud Platform (GCP) is a suite of cloud computing services offered by Google. It allows you to build, test, and deploy applications on Google's highly-scalable and reliable infrastructure. It also offers free tiers for many of its services, and hundreds of dollars in credits for new users, making it a great option for deploying your applications. Keep in mind that there are many other cloud providers, like AWS and Azure, which will most probably offer similar enough services to deploy your application there as well.
 
-To deploy our API to GCP, you will need to create a project, enable all the necessary services (APIs), such as Artifact Registry and Cloud Run, and then build and deploy the container to Cloud Run. For more information about how to do that, check out the README of the [GitHub repository]().
+To deploy our API to GCP, you will need to create a project, enable all the necessary services (APIs), such as Artifact Registry and Cloud Run, and then build and deploy the container to Cloud Run. For more information about how to do that, check out the README of the [GitHub repository](https://github.com/Victor-Botelho/forecast-api).
 
 ## Conclusion
 In this article, you learned how to build a Flask API with forecasting capabilities, containerize it with Docker, and deploy it to Google Cloud Platform. This project can be used as a starting point for your own projects, and can be extended in many ways. For example, you can add more forecasting models, or even add a database to store the forecasts. You can also add authentication, so that only authorized users can access the API. The possibilities are endless!
