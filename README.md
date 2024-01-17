@@ -183,7 +183,7 @@ docker push us-central1-docker.pkg.dev/<project-id>/forecast-api-repo/forecast-a
 ```
 
 ### Cloud Run
-Now that the Docker image is ready, it is time to deploy the application to Cloud Run. There are many ways to do that, as described in the [official documentation](https://cloud.google.com/run/docs/deploying). Here, the command line interface is used. To do so, replicate the following commands, remembering to change the project ID, region, image name, etc accordingly. Since the flag `--allow-unauthenticated` is used, the application will be publicly available, so be careful when using it, as it may incur in costs. Since Cloud Run has a free tier, it should run fine for small applications, and if billing is not enabled for the project, then as the free tier limit is reached, the application will simply stop working.
+Now that the Docker image is ready, it is time to deploy the application to Cloud Run. There are many ways to do that, as described in the [official documentation](https://cloud.google.com/run/docs/deploying). Here, the command line interface is used. To do so, replicate the following commands, remembering to change the project ID, region, image name, etc accordingly. Since the flag `--allow-unauthenticated` is used, the application will be publicly available. This means that anyone with the deployed service URL will be able to call it. So be careful when using or publishing it, as it may incur in costs. Since Cloud Run has a free tier, it should be fine for few requests.
 
 ```bash
 gcloud run deploy forecast-api --image us-central1-docker.pkg.dev/<project-id>/forecast-api-repo/forecast-api --allow-unauthenticated --region us-central1 --port 8000 --memory 1500Mi --cpu 1
